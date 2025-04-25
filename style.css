@@ -1,0 +1,181 @@
+/* reset e base */
+
+body {
+font-family:Special Gothic Expanded One;
+  color: black;
+  Background-color:grey;
+    padding:40px;
+padding-top:80px;
+margin:0;
+}
+
+.titulo-loja {
+  text-align: center;
+font-family: roboto mono;
+  color: white;
+  font-size:10px;
+  margin-bottom:40px;
+}
+
+/* seção de produtos */
+
+.produtos{
+display: flex;
+  gap:30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:40px 20px;
+}
+
+/* cada card de produto */
+
+.produto {
+  background-color: white;
+padding:20px;
+  border-radius:12px;
+  box-shadow: 0 4px 12px rgba(0,0,0);
+  width:200px;
+  text-align: center;
+  transition:transform 0.3s ease;
+}
+
+/* imagem do produto */
+
+.produto img {
+  width:100%;
+  border-radius:8px;
+}
+
+/* nome do produto */
+
+.produto h2 {
+front-size:18px;
+  margin:10px 0;
+}
+
+/* preço */
+
+.produto p {
+front-size:16px;
+  color:#444;
+}
+
+/* botão de compra */
+
+.produto button {
+  background-color: #e6ebf2;
+font-family:roboto mono;
+  color:grey;
+border:outset;
+  padding:10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* botão de compra com hover */
+
+.produto button:hover {
+  background-color: #c8d2e0;
+}
+  
+  
+.logo {
+  height:60px;
+}
+/* cabeçalho com logo */
+.topo {
+display: flex;
+justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+  /* menu de navegação fixo */
+.menu {
+  background-color:none;
+padding: 20px;
+  position: fixed;
+top:0;
+  width:100%;
+  box-shadow: 0 2px 8px (0,0,0,0.1);
+    z-index:999;
+}
+
+.menu a {
+text-decoration: none;
+  color: #cfbacb;
+font-weight: bold;
+  transition: color 0.3s ease;
+}
+/* hover para "aumentar" quando passa o mouse */
+.menu a:hover {
+color: #ffffff;
+}
+
+.produto:hover {
+transform:scale(1.03);
+}
+
+.menu ul {
+display: flex;
+justify-content: center;
+  gap: 30px;
+  margin:2;
+ padding:0;
+  list-style:none;
+}
+/* Feito para que o conteúdo não fique escondido pelo menu */
+main {
+padding-top:120px;
+}
+
+/* Melhoria para telas menores */
+
+@media (max-width: 768px) {
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto {
+    width: 90%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding-top: 140px;
+  }
+}
+
+/* rodapé com informações e redes sociais */
+
+  .rodape {
+    background-color: #ffe4ec; 
+    padding:30px;
+    text-align: center;
+    color: #555;
+    margin-top:50px;
+    font-size:14px;
+  }
+
+  .rodape .redes {
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    gap:40px;
+   
+   }
+.rodape .redes a {
+font-size:20px;
+  text-decoration:none;
+  color:#d81b60;
+  transition: transform 0.3 ease;
+}
+.rodape .redes a:hover {
+  transform: scale(1.3);
+}
+  
